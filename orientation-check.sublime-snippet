@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<script>
+	window.addEventListener("orientationchange", function() {
+		var ww = window.innerWidth
+		|| document.documentElement.clientWidth
+		|| document.body.clientWidth;
+    // Announce the new orientation number
+    alert(window.orientation);
+    alert(ww);
+}, false);
+</script>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>orientation-check</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

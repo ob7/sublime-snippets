@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700italic,900,700,600italic,600,400italic,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>googlefont-titillium-web</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

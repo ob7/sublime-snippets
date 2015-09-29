@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+function after(ms, fn){ setTimeout(fn, ms); }
+after(100, function(){	
+		\$(".service-boats").addClass("active");
+	});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>after-function</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

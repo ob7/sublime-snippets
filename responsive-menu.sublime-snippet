@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+//responsive menu
+	function menuSizing() {
+		var w = \$(window).width();
+		if (w > 960 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}
+	}
+	\$(function() {
+		console.log("jquery function initiated");
+		var pull       = \$('#pull');
+		menu       = \$('nav ul');
+		menuHeight = menu.height();
+
+		console.log("menu height is:");
+		console.log(menuHeight);
+
+		\$('#pull').on('click',function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+		menuSizing();
+
+	});
+	\$(window).resize(function(){
+		menuSizing();
+	});
+// end responsive menu
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>responsive-menu</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

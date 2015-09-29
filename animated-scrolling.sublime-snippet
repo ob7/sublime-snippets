@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+//animated scrolling
+	\$(function() {
+		\$('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = \$(this.hash);
+				target = target.length ? target : \$('[name=' + this.hash.slice(1) +']');
+				var ww = window.innerWidth
+				|| document.documentElement.clientWidth
+				|| document.body.clientWidth;
+				if (target.length && ww >= 960) {
+					\$('html,body').animate({
+						scrollTop: target.offset().top - 100
+					}, 1000);
+					return false;
+				}
+			}
+		});
+	});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>animated-scrolling</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

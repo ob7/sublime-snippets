@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+-webkit-flex: 0 1 auto;
+-ms-flex: 0 1 auto;
+flex: 0 1 auto;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>flex-shrink</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

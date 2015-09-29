@@ -1,0 +1,38 @@
+<snippet>
+	<content><![CDATA[
+<script type="text/javascript"
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA84F0OYUwaYy8WRH8uL16DoxfWgaZlEH0">
+</script>
+<script>
+var map;
+function initialize() {
+var location = new google.maps.LatLng(61.2243616,-149.8019241);
+  var mapOptions = {
+    zoom: 15,
+    center: location
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+  var locationMarker = new google.maps.Marker({
+  	position: location,
+  	map: map,
+  	title: "Where we are"
+  });
+  var locationText = '<div>' + '<h1>ConnectHR</h1>';
+  var locationInfo = new google.maps.InfoWindow({
+  	content: locationText,
+  	maxWidth: 200
+  });
+  google.maps.event.addListener(locationMarker, 'click', function() {
+  	locationInfo.open(map, locationMarker);
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>googlemap</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

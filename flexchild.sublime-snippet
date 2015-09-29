@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+-webkit-order: 0;
+-ms-flex-order: 0;
+order: 0;
+-webkit-flex: 1 1 auto;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+-webkit-align-self: auto;
+-ms-flex-item-align: auto;
+align-self: auto;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>flexchild</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

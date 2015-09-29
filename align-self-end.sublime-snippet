@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+-webkit-align-self: flex-end;
+-ms-flex-item-align: end;
+align-self: flex-end;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>align-self-end</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
